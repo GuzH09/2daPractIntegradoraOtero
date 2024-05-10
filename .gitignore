@@ -1,0 +1,4 @@
+/node_modules
+src/oldfsjsons
+src/dao/oldFSManagers
+.env

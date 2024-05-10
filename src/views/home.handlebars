@@ -1,0 +1,19 @@
+<div class="box">
+    <form class="box" method="get" action="/api/sessions/logout">
+        <button type="submit">Logout</button>
+    </form>
+    <form class="box" method="get" action="/profile">
+        <button type="submit">Profile</button>
+    </form>
+    <p><b>Bienvenido </b>{{user.role}} {{user.first_name}} {{user.last_name}}</p>
+</div>
+<div>
+    {{#each products}}
+        <article>
+            <h1>{{this.title}}</h1>
+            <p>Precio: {{this.price}}</p>
+            <p>Stock: {{this.stock}}</p>
+            <p>Categoria: {{this.category}}</p>
+        </article>
+    {{/each}}
+</div>
